@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
+
+    }
+    public static void checkPassword(){
         Scanner reader = new Scanner(System.in);
         System.out.println("Set your password: ");
         String password = reader.nextLine();
-        checkPassword(password);
-    }
-    public static void checkPassword(String password){
         while(true){
-            Scanner reader = new Scanner(System.in);
             System.out.println("Type your password: ");
             String trys = reader.nextLine();
             if (trys.equals(password)){
@@ -21,5 +20,15 @@ public class Main{
                 System.out.println("Wrong!");
             }
         }
+    }
+    public static void threeNumbers(){
+        Scanner reader = new Scanner(System.in);
+        int sum = 0;
+        System.out.println("Enter three numbers: ");
+        for(int i = 0; i<3;i++) {
+            int read = reader.nextInt();
+            sum += read;
+        }
+        System.out.println("Sum is: " + sum);
     }
 }
