@@ -56,4 +56,14 @@ public class Main{
             first++;
         }
     }
+    public static void powsum(){
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int power = reader.nextInt();
+        int sum = 0;
+        for(int i = 0; i<=power; i++){
+            sum += (int)Math.pow(2, i);
+        }
+        System.out.println("The result is: " + sum);
+    }
 }
