@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
-        readsNumbers();
+
     }
     public static void checkPassword(){
         Scanner reader = new Scanner(System.in);
@@ -44,5 +44,16 @@ public class Main{
             }
         }
         System.out.println("Sum in the end: " + sum);
+    }
+    public static void firstLastNumber(){
+        Scanner reader = new Scanner(System.in);
+        System.out.println("First number: ");
+        int first = reader.nextInt();
+        System.out.println("Last number: ");
+        int last = reader.nextInt();
+        while(first<=last){
+            System.out.println(first);
+            first++;
+        }
     }
 }
