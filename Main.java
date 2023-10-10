@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
-
+        readsNumbers();
     }
     public static void checkPassword(){
         Scanner reader = new Scanner(System.in);
@@ -30,5 +30,19 @@ public class Main{
             sum += read;
         }
         System.out.println("Sum is: " + sum);
+    }
+    public static void readsNumbers(){
+        Scanner reader = new Scanner(System.in);
+        int sum = 0;
+        while (true){
+            int read = Integer.parseInt(reader.nextLine());
+            if(read == 0){
+                break;
+            }else{
+                sum+=read;
+                System.out.println("Sum now: " + sum);
+            }
+        }
+        System.out.println("Sum in the end: " + sum);
     }
 }
