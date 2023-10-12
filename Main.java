@@ -66,4 +66,12 @@ public class Main{
         }
         System.out.println("The result is: " + sum);
     }
+    public static void printText(){
+        Scanner reader = new Scanner(System.in);
+        System.out.println("How many times do you want the text to be printed?");
+        int times = reader.nextInt();
+        for(int i = 0; i<times; i++){
+            System.out.println("In the beginning there were the swamp, the hoe and Java.");
+        }
+    }
 }
