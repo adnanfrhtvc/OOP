@@ -80,4 +80,20 @@ public class Main{
         }
         System.out.println();
     }
+    public static void drawStarsPiramid(int rows){
+        for (int i = 1; i<=rows; i++){
+            for (int j = 0; j<i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void invertedDrawStarsPiramid(int rows){
+        for(int i = 0; i <rows; i++){
+            for(int j = rows; j>i; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }
