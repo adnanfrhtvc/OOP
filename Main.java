@@ -74,4 +74,10 @@ public class Main{
             System.out.println("In the beginning there were the swamp, the hoe and Java.");
         }
     }
+    public static void printStars(int amount){
+        for(int i = 0; i<amount; i++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
 }
