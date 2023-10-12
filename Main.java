@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main{
@@ -102,6 +103,27 @@ public class Main{
                 System.out.print(j);
             }
             System.out.println();
+        }
+    }
+    public static void guessingGame(){
+        Scanner reader = new Scanner(System.in);
+        Random random = new Random();
+        int numberToGuess = random.nextInt(0,101);
+        int guesses = 0;
+        System.out.println(numberToGuess);
+        while (true){
+            System.out.print("Guess a number: ");
+            int userGuess = reader.nextInt();
+            if(userGuess==numberToGuess){
+                System.out.println("Congratulations, your guess is correct!");
+                break;
+            }else if(userGuess<numberToGuess){
+                guesses++;
+                System.out.println("The number is greater, guesses made: "+ guesses);
+            }else{
+                guesses++;
+                System.out.println("The number is lesser, guesses made: "+ guesses);
+            }
         }
     }
 }
