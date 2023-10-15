@@ -126,4 +126,7 @@ public class Main{
             }
         }
     }
+    public static void testest(){
+        System.out.println("Adnan");
+    }
 }
